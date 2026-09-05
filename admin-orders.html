@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders - Admin - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">View Site</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="dash-sidebar">
+      <div class="dash-user">
+        <div class="dash-avatar">👨‍💼</div>
+        <h4>Administrator</h4>
+        <span>admin@stackly.com</span>
+      </div>
+      <nav class="dash-nav">
+        <a href="admin-dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+        <a href="admin-orders.html" class="active"><span class="nav-icon">📦</span> Orders</a>
+        <a href="admin-products.html"><span class="nav-icon">🏷️</span> Products</a>
+        <a href="admin-categories.html"><span class="nav-icon">🗂️</span> Categories</a>
+        <a href="admin-customers.html"><span class="nav-icon">👥</span> Customers</a>
+        <a href="admin-messages.html"><span class="nav-icon">💬</span> Messages</a>
+        <a href="admin-reports.html"><span class="nav-icon">📈</span> Reports</a>
+        <a href="admin-settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      </nav>
+      <a href="index.html" class="dash-view">🌐 View Site</a>
+      <a href="login.html" class="dash-logout">🚪 Logout</a>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-head">
+        <div>
+          <h1>Orders</h1>
+          <p>Manage all customer orders and their status.</p>
+        </div>
+        <div class="dash-search">
+          <span>🔍</span>
+          <input type="text" placeholder="Search orders...">
+        </div>
+      </div>
+
+      <div class="dash-toolbar">
+        <div class="filters">
+          <select>
+            <option>All Status</option>
+            <option>Pending</option>
+            <option>Processing</option>
+            <option>Shipped</option>
+            <option>Delivered</option>
+            <option>Cancelled</option>
+          </select>
+          <select>
+            <option>Last 30 days</option>
+            <option>Last 90 days</option>
+            <option>Last year</option>
+          </select>
+          <a href="404.html" class="btn btn-primary">Export</a>
+        </div>
+      </div>
+
+      <div class="dash-panel">
+        <div class="recent-orders-table">
+          <table class="dash-tbl">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>#ORD-1024</td><td>John Carter</td><td>Sep 02, 2026</td><td>$2,450</td><td><span class="status status-shipped">Shipped</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td>#ORD-1023</td><td>Sarah Lee</td><td>Sep 02, 2026</td><td>$890</td><td><span class="status status-delivered">Delivered</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td>#ORD-1022</td><td>Mike Brown</td><td>Sep 01, 2026</td><td>$3,120</td><td><span class="status status-processing">Processing</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td>#ORD-1021</td><td>Emily Davis</td><td>Sep 01, 2026</td><td>$560</td><td><span class="status status-pending">Pending</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td>#ORD-1020</td><td>David Wilson</td><td>Aug 31, 2026</td><td>$1,780</td><td><span class="status status-cancelled">Cancelled</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td>#ORD-1019</td><td>Anna Taylor</td><td>Aug 30, 2026</td><td>$2,340</td><td><span class="status status-delivered">Delivered</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td>#ORD-1018</td><td>James Moore</td><td>Aug 29, 2026</td><td>$980</td><td><span class="status status-shipped">Shipped</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

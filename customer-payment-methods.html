@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Methods - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">View Site</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="dash-sidebar">
+      <div class="dash-user">
+        <div class="dash-avatar">🧑</div>
+        <h4>John Carter</h4>
+        <span>Member since 2023</span>
+      </div>
+      <nav class="dash-nav">
+        <a href="customer-dashboard.html"><span class="nav-icon">📊</span> My Dashboard</a>
+        <a href="customer-orders.html"><span class="nav-icon">📦</span> My Orders</a>
+        <a href="customer-wishlist.html"><span class="nav-icon">❤️</span> Wishlist</a>
+        <a href="customer-track-delivery.html"><span class="nav-icon">🗺️</span> Track Delivery</a>
+        <a href="customer-payment-methods.html" class="active"><span class="nav-icon">💳</span> Payment Methods</a>
+        <a href="customer-addresses.html"><span class="nav-icon">📍</span> Addresses</a>
+        <a href="customer-settings.html"><span class="nav-icon">⚙️</span> Account Settings</a>
+      </nav>
+      <a href="index.html" class="dash-view">🌐 View Site</a>
+      <a href="login.html" class="dash-logout">🚪 Logout</a>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-head">
+        <div>
+          <h1>Payment Methods</h1>
+          <p>Manage the cards and payment options on your account.</p>
+        </div>
+        <a href="404.html" class="btn btn-primary">+ Add Payment Method</a>
+      </div>
+
+      <div class="payment-grid">
+
+        <div class="payment-card">
+          <div class="pay-brand">
+            <span>💳 Visa</span>
+            <span class="badge default">Default</span>
+          </div>
+          <div class="pay-num">•••• •••• •••• 4242</div>
+          <div class="pay-foot">
+            <span>John Carter</span>
+            <span>Expires 09/28</span>
+          </div>
+          <div class="pay-actions">
+            <a href="404.html" class="btn-outline-sm">Edit</a>
+            <a href="404.html" class="btn-outline-sm">Remove</a>
+          </div>
+        </div>
+
+        <div class="payment-card">
+          <div class="pay-brand">
+            <span>🅂 Mastercard</span>
+            <span class="badge">Secondary</span>
+          </div>
+          <div class="pay-num">•••• •••• •••• 7718</div>
+          <div class="pay-foot">
+            <span>John Carter</span>
+            <span>Expires 03/27</span>
+          </div>
+          <div class="pay-actions">
+            <a href="404.html" class="btn-outline-sm">Set Default</a>
+            <a href="404.html" class="btn-outline-sm">Remove</a>
+          </div>
+        </div>
+
+        <div class="payment-card">
+          <div class="pay-brand">
+            <span>🏦 Bank Transfer</span>
+            <span class="badge">Verified</span>
+          </div>
+          <div class="pay-num" style="letter-spacing:1px;">GTB •• 4489</div>
+          <div class="pay-foot">
+            <span>Savings Account</span>
+            <span>Verified</span>
+          </div>
+          <div class="pay-actions">
+            <a href="404.html" class="btn-outline-sm">Set Default</a>
+            <a href="404.html" class="btn-outline-sm">Remove</a>
+          </div>
+        </div>
+
+        <button class="add-card-btn">
+          <span class="plus">+</span>
+          Add New Payment Method
+        </button>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

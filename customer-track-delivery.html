@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Delivery - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">View Site</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="dash-sidebar">
+      <div class="dash-user">
+        <div class="dash-avatar">🧑</div>
+        <h4>John Carter</h4>
+        <span>Member since 2023</span>
+      </div>
+      <nav class="dash-nav">
+        <a href="customer-dashboard.html"><span class="nav-icon">📊</span> My Dashboard</a>
+        <a href="customer-orders.html"><span class="nav-icon">📦</span> My Orders</a>
+        <a href="customer-wishlist.html"><span class="nav-icon">❤️</span> Wishlist</a>
+        <a href="customer-track-delivery.html" class="active"><span class="nav-icon">🗺️</span> Track Delivery</a>
+        <a href="customer-payment-methods.html"><span class="nav-icon">💳</span> Payment Methods</a>
+        <a href="customer-addresses.html"><span class="nav-icon">📍</span> Addresses</a>
+        <a href="customer-settings.html"><span class="nav-icon">⚙️</span> Account Settings</a>
+      </nav>
+      <a href="index.html" class="dash-view">🌐 View Site</a>
+      <a href="login.html" class="dash-logout">🚪 Logout</a>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-head">
+        <div>
+          <h1>Track Delivery</h1>
+          <p>Follow your shipment in real time.</p>
+        </div>
+      </div>
+
+      <div class="track-meta-grid">
+        <div class="track-meta">
+          <span>Order ID</span>
+          <strong>#ORD-1024</strong>
+        </div>
+        <div class="track-meta">
+          <span>Carrier</span>
+          <strong>Stackly Logistics</strong>
+        </div>
+        <div class="track-meta">
+          <span>Tracking Number</span>
+          <strong>SL-8847-2210</strong>
+        </div>
+        <div class="track-meta">
+          <span>Estimated Delivery</span>
+          <strong>Sep 05, 2026</strong>
+        </div>
+      </div>
+
+      <div class="dash-panel track-card">
+        <div class="order-card-top">
+          <span class="order-id">#ORD-1024 · Steel Bundle</span>
+          <div class="order-meta">
+            <span class="status status-shipped">In Transit</span>
+          </div>
+        </div>
+
+        <div class="track-progress">
+          <div class="track-step done">
+            <div class="track-dot">✓</div>
+            <div class="track-info">
+              <h5>Order Placed</h5>
+              <p>Your order was placed and confirmed.</p>
+              <span class="track-time">Sep 02, 2026 · 09:24 AM</span>
+            </div>
+          </div>
+          <div class="track-step done">
+            <div class="track-dot">✓</div>
+            <div class="track-info">
+              <h5>Processing at Warehouse</h5>
+              <p>Items packed and ready for dispatch.</p>
+              <span class="track-time">Sep 03, 2026 · 02:10 PM</span>
+            </div>
+          </div>
+          <div class="track-step current">
+            <div class="track-dot">🚚</div>
+            <div class="track-info">
+              <h5>Out for Delivery</h5>
+              <p>Your shipment is on its way to Warehouse, Kumasi.</p>
+              <span class="track-time">Sep 05, 2026 · 08:45 AM</span>
+            </div>
+          </div>
+          <div class="track-step">
+            <div class="track-dot">✓</div>
+            <div class="track-info">
+              <h5>Delivered</h5>
+              <p>Awaiting final confirmation on arrival.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

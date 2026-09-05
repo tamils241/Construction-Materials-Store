@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports - Admin - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">View Site</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="dash-sidebar">
+      <div class="dash-user">
+        <div class="dash-avatar">👨‍💼</div>
+        <h4>Administrator</h4>
+        <span>admin@stackly.com</span>
+      </div>
+      <nav class="dash-nav">
+        <a href="admin-dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+        <a href="admin-orders.html"><span class="nav-icon">📦</span> Orders</a>
+        <a href="admin-products.html"><span class="nav-icon">🏷️</span> Products</a>
+        <a href="admin-categories.html"><span class="nav-icon">🗂️</span> Categories</a>
+        <a href="admin-customers.html"><span class="nav-icon">👥</span> Customers</a>
+        <a href="admin-messages.html"><span class="nav-icon">💬</span> Messages</a>
+        <a href="admin-reports.html" class="active"><span class="nav-icon">📈</span> Reports</a>
+        <a href="admin-settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      </nav>
+      <a href="index.html" class="dash-view">🌐 View Site</a>
+      <a href="login.html" class="dash-logout">🚪 Logout</a>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-head">
+        <div>
+          <h1>Reports</h1>
+          <p>Analyze sales, revenue and performance insights.</p>
+        </div>
+        <div class="dash-toolbar">
+          <div class="filters">
+            <select>
+              <option>Last 30 days</option>
+              <option>Last 90 days</option>
+              <option>Last 12 months</option>
+            </select>
+            <a href="404.html" class="btn btn-primary">Export CSV</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="stat-icon icon-green">💰</div>
+          <div class="stat-body">
+            <h3>Total Revenue</h3>
+            <div class="stat-big">$128,450</div>
+            <span class="stat-change up">▲ 12.5%</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-orange">🧾</div>
+          <div class="stat-body">
+            <h3>Net Profit</h3>
+            <div class="stat-big">$38,120</div>
+            <span class="stat-change up">▲ 9.8%</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-blue">📦</div>
+          <div class="stat-body">
+            <h3>Orders</h3>
+            <div class="stat-big">1,245</div>
+            <span class="stat-change up">▲ 8.2%</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-red">🎯</div>
+          <div class="stat-body">
+            <h3>Return Rate</h3>
+            <div class="stat-big">4.6%</div>
+            <span class="stat-change down">▼ 1.2%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-panels">
+        <div class="dash-panel">
+          <h2>Top Selling Products</h2>
+          <ul class="mini-list">
+            <li><span class="status-dot dot-orange"></span><div class="info"><strong>Dangote Cement 50kg</strong><small>412 orders this period</small></div><span class="price">$82,150</span></li>
+            <li><span class="status-dot dot-blue"></span><div class="info"><strong>Structural Steel 12mm</strong><small>208 orders this period</small></div><span class="price">$54,320</span></li>
+            <li><span class="status-dot dot-green"></span><div class="info"><strong>Clay Bricks (Pallet)</strong><small>164 orders this period</small></div><span class="price">$36,080</span></li>
+            <li><span class="status-dot dot-red"></span><div class="info"><strong>Hardwood Planks</strong><small>121 orders this period</small></div><span class="price">$22,940</span></li>
+          </ul>
+        </div>
+        <div class="dash-panel">
+          <h2>Sales by Category</h2>
+          <ul class="mini-list">
+            <li><span class="status-dot dot-orange"></span><div class="info"><strong>Cement</strong><small>28% of revenue</small></div><span class="price">$36,050</span></li>
+            <li><span class="status-dot dot-blue"></span><div class="info"><strong>Steel &amp; Metal</strong><small>22% of revenue</small></div><span class="price">$28,260</span></li>
+            <li><span class="status-dot dot-green"></span><div class="info"><strong>Tools &amp; Equipment</strong><small>18% of revenue</small></div><span class="price">$23,120</span></li>
+            <li><span class="status-dot dot-red"></span><div class="info"><strong>Masonry</strong><small>14% of revenue</small></div><span class="price">$17,980</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

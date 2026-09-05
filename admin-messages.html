@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages - Admin - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">View Site</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="dash-sidebar">
+      <div class="dash-user">
+        <div class="dash-avatar">👨‍💼</div>
+        <h4>Administrator</h4>
+        <span>admin@stackly.com</span>
+      </div>
+      <nav class="dash-nav">
+        <a href="admin-dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+        <a href="admin-orders.html"><span class="nav-icon">📦</span> Orders</a>
+        <a href="admin-products.html"><span class="nav-icon">🏷️</span> Products</a>
+        <a href="admin-categories.html"><span class="nav-icon">🗂️</span> Categories</a>
+        <a href="admin-customers.html"><span class="nav-icon">👥</span> Customers</a>
+        <a href="admin-messages.html" class="active"><span class="nav-icon">💬</span> Messages</a>
+        <a href="admin-reports.html"><span class="nav-icon">📈</span> Reports</a>
+        <a href="admin-settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      </nav>
+      <a href="index.html" class="dash-view">🌐 View Site</a>
+      <a href="login.html" class="dash-logout">🚪 Logout</a>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-head">
+        <div>
+          <h1>Messages</h1>
+          <p>Respond to customer inquiries and feedback.</p>
+        </div>
+      </div>
+
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="stat-icon icon-blue">💬</div>
+          <div class="stat-body">
+            <h3>Total Messages</h3>
+            <div class="stat-big">142</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-orange">📨</div>
+          <div class="stat-body">
+            <h3>Unread</h3>
+            <div class="stat-big">18</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-green">✅</div>
+          <div class="stat-body">
+            <h3>Resolved</h3>
+            <div class="stat-big">96</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-red">⏳</div>
+          <div class="stat-body">
+            <h3>In Progress</h3>
+            <div class="stat-big">28</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-panel">
+        <div class="recent-orders-table">
+          <table class="dash-tbl">
+            <thead>
+              <tr>
+                <th>From</th>
+                <th>Subject</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>John Carter</strong></td><td>Delivery schedule inquiry</td><td>Sep 04, 2026</td><td><span class="status status-shipped">Unread</span></td><td><a href="404.html" class="btn-outline-sm">Reply</a></td></tr>
+              <tr><td><strong>Sarah Lee</strong></td><td>Price quote for bulk cement</td><td>Sep 03, 2026</td><td><span class="status status-processing">In Progress</span></td><td><a href="404.html" class="btn-outline-sm">Reply</a></td></tr>
+              <tr><td><strong>Mike Brown</strong></td><td>Refund request #ORD-1022</td><td>Sep 03, 2026</td><td><span class="status status-pending">Pending</span></td><td><a href="404.html" class="btn-outline-sm">Reply</a></td></tr>
+              <tr><td><strong>Emily Davis</strong></td><td>Thanks for fast delivery</td><td>Sep 01, 2026</td><td><span class="status status-delivered">Resolved</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td><strong>David Wilson</strong></td><td>Cancel order #ORD-1020</td><td>Aug 31, 2026</td><td><span class="status status-delivered">Resolved</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

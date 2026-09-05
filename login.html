@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <div class="auth-page">
+    <div class="auth-container">
+      <div class="auth-visual">
+        <div class="visual-icon"><img src="images/cement-hero.webp" alt="Stackly Construction"></div>
+        <h3>Welcome Back to Stackly</h3>
+        <p>Login to access your orders, track deliveries, and manage your account.</p>
+        <a href="index.html" class="back-link">← Back to Home</a>
+      </div>
+
+      <div class="auth-form-section">
+        <h2>Login to Your Account</h2>
+        <p class="auth-subtitle">Enter your credentials to access your dashboard</p>
+
+        <form class="auth-form">
+          <div class="form-group">
+            <label>Login As</label>
+            <div class="role-selector">
+              <label class="role-option">
+                <input type="radio" name="role" value="customer" checked>
+                <span>👤 Customer</span>
+              </label>
+              <label class="role-option">
+                <input type="radio" name="role" value="admin">
+                <span>👨‍💼 Admin</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}" title="Password must be at least 8 characters and include an uppercase letter, a lowercase letter, a number, and a special character" required>
+          </div>
+
+          <div class="form-options">
+            <label class="form-check">
+              <input type="checkbox" id="remember-me" required> Remember me
+            </label>
+            <a href="404.html" class="form-forgot">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="auth-btn">Login</button>
+        </form>
+
+        <div class="auth-divider">or continue with</div>
+
+        <div class="social-login">
+          <a href="404.html" class="social-btn">G Google</a>
+          <a href="404.html" class="social-btn">f Facebook</a>
+        </div>
+
+        <p class="auth-switch">
+          Don't have an account? <a href="register.html">Register here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelector('.auth-form').addEventListener('submit', function (e) {
+      var form = this;
+      if (!document.getElementById('remember-me').checked) {
+        e.preventDefault();
+        alert('Please select the "Remember me" checkbox before continuing.');
+        return;
+      }
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        alert('Please fill in all the required fields correctly.');
+        return;
+      }
+      e.preventDefault();
+      var role = document.querySelector('input[name="role"]:checked').value;
+      if (role === 'admin') {
+        window.location.href = 'admin-dashboard.html';
+      } else {
+        window.location.href = 'customer-dashboard.html';
+      }
+    });
+  </script>
+</body>
+</html>

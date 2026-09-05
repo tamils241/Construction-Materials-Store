@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">View Site</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="dash-sidebar">
+      <div class="dash-user">
+        <div class="dash-avatar">👨‍💼</div>
+        <h4>Administrator</h4>
+        <span>admin@stackly.com</span>
+      </div>
+      <nav class="dash-nav">
+        <a href="admin-dashboard.html" class="active"><span class="nav-icon">📊</span> Dashboard</a>
+        <a href="admin-orders.html"><span class="nav-icon">📦</span> Orders</a>
+        <a href="admin-products.html"><span class="nav-icon">🏷️</span> Products</a>
+        <a href="admin-categories.html"><span class="nav-icon">🗂️</span> Categories</a>
+        <a href="admin-customers.html"><span class="nav-icon">👥</span> Customers</a>
+        <a href="admin-messages.html"><span class="nav-icon">💬</span> Messages</a>
+        <a href="admin-reports.html"><span class="nav-icon">📈</span> Reports</a>
+        <a href="admin-settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      </nav>
+      <a href="index.html" class="dash-view">🌐 View Site</a>
+      <a href="login.html" class="dash-logout">🚪 Logout</a>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-head">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Welcome back, Admin! Here's your store overview.</p>
+        </div>
+        <div class="dash-search">
+          <span>🔍</span>
+          <input type="text" placeholder="Search orders, products...">
+        </div>
+      </div>
+
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="stat-icon icon-orange">💰</div>
+          <div class="stat-body">
+            <h3>Total Revenue</h3>
+            <div class="stat-big">$128,450</div>
+            <span class="stat-change up">▲ 12.5% this week</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-blue">📦</div>
+          <div class="stat-body">
+            <h3>Total Orders</h3>
+            <div class="stat-big">1,245</div>
+            <span class="stat-change up">▲ 8.2% this week</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-green">👥</div>
+          <div class="stat-body">
+            <h3>Customers</h3>
+            <div class="stat-big">3,890</div>
+            <span class="stat-change up">▲ 4.1% this week</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-red">🚚</div>
+          <div class="stat-body">
+            <h3>Pending Delivery</h3>
+            <div class="stat-big">38</div>
+            <span class="stat-change down">▼ 3 samples</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-panels">
+        <div class="dash-panel">
+          <h2>Recent Orders <a href="admin-orders.html">View All →</a></h2>
+          <div class="recent-orders-table">
+            <table class="dash-tbl">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Customer</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>#ORD-1024</td><td>John Carter</td><td>Sep 02, 2026</td><td>$2,450</td><td><span class="status status-shipped">Shipped</span></td></tr>
+                <tr><td>#ORD-1023</td><td>Sarah Lee</td><td>Sep 02, 2026</td><td>$890</td><td><span class="status status-delivered">Delivered</span></td></tr>
+                <tr><td>#ORD-1022</td><td>Mike Brown</td><td>Sep 01, 2026</td><td>$3,120</td><td><span class="status status-processing">Processing</span></td></tr>
+                <tr><td>#ORD-1021</td><td>Emily Davis</td><td>Sep 01, 2026</td><td>$560</td><td><span class="status status-pending">Pending</span></td></tr>
+                <tr><td>#ORD-1020</td><td>David Wilson</td><td>Aug 31, 2026</td><td>$1,780</td><td><span class="status status-cancelled">Cancelled</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dash-panel">
+          <h2>Order Status</h2>
+          <ul class="mini-list">
+            <li><span class="status-dot dot-orange"></span><div class="info"><strong>Processing</strong><small>320 orders</small></div><span class="price">$45,200</span></li>
+            <li><span class="status-dot dot-blue"></span><div class="info"><strong>Shipped</strong><small>180 orders</small></div><span class="price">$28,900</span></li>
+            <li><span class="status-dot dot-green"></span><div class="info"><strong>Delivered</strong><small>690 orders</small></div><span class="price">$51,300</span></li>
+            <li><span class="status-dot dot-red"></span><div class="info"><strong>Cancelled</strong><small>55 orders</small></div><span class="price">$3,050</span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">View Site</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="dash-sidebar">
+      <div class="dash-user">
+        <div class="dash-avatar">🧑</div>
+        <h4>John Carter</h4>
+        <span>Member since 2023</span>
+      </div>
+      <nav class="dash-nav">
+        <a href="customer-dashboard.html"><span class="nav-icon">📊</span> My Dashboard</a>
+        <a href="customer-orders.html" class="active"><span class="nav-icon">📦</span> My Orders</a>
+        <a href="customer-wishlist.html"><span class="nav-icon">❤️</span> Wishlist</a>
+        <a href="customer-track-delivery.html"><span class="nav-icon">🗺️</span> Track Delivery</a>
+        <a href="customer-payment-methods.html"><span class="nav-icon">💳</span> Payment Methods</a>
+        <a href="customer-addresses.html"><span class="nav-icon">📍</span> Addresses</a>
+        <a href="customer-settings.html"><span class="nav-icon">⚙️</span> Account Settings</a>
+      </nav>
+      <a href="index.html" class="dash-view">🌐 View Site</a>
+      <a href="login.html" class="dash-logout">🚪 Logout</a>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-head">
+        <div>
+          <h1>My Orders</h1>
+          <p>Review, track and manage all your purchases.</p>
+        </div>
+        <a href="products.html" class="btn btn-primary">Order New Materials</a>
+      </div>
+
+      <div class="dash-toolbar">
+        <div class="filters">
+          <select>
+            <option>All Orders</option>
+            <option>Pending</option>
+            <option>Processing</option>
+            <option>Shipped</option>
+            <option>Delivered</option>
+            <option>Cancelled</option>
+          </select>
+          <select>
+            <option>Last 30 days</option>
+            <option>Last 6 months</option>
+            <option>Last year</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="dash-panel">
+        <h2 class="dash-section-title">Order History</h2>
+
+        <div class="order-card">
+          <div class="order-card-top">
+            <span class="order-id">#ORD-1024 · Steel Bundle</span>
+            <div class="order-meta">
+              <span>Sep 02, 2026</span>
+              <span class="status status-shipped">Shipped</span>
+            </div>
+          </div>
+          <div class="order-card-body">
+            <div class="order-product">
+              <h4>Structural Steel Bundle (12mm x 6m)</h4>
+              <p>Qty: 15 units · Delivered to Warehouse, Kumasi</p>
+            </div>
+            <div class="order-total">
+              <strong>$2,450</strong>
+              <div class="order-actions">
+                <a href="customer-track-delivery.html" class="btn btn-primary btn-sm">Track</a>
+                <a href="404.html" class="btn-outline-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-card">
+          <div class="order-card-top">
+            <span class="order-id">#ORD-1011 · Cement (50 bags)</span>
+            <div class="order-meta">
+              <span>Aug 20, 2026</span>
+              <span class="status status-delivered">Delivered</span>
+            </div>
+          </div>
+          <div class="order-card-body">
+            <div class="order-product">
+              <h4>Dangote Cement 50kg Bags</h4>
+              <p>Qty: 50 bags · Delivered to Site B, Accra</p>
+            </div>
+            <div class="order-total">
+              <strong>$890</strong>
+              <div class="order-actions">
+                <a href="404.html" class="btn-outline-sm">Buy Again</a>
+                <a href="404.html" class="btn-outline-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-card">
+          <div class="order-card-top">
+            <span class="order-id">#ORD-1007 · Wood Planks</span>
+            <div class="order-meta">
+              <span>Aug 12, 2026</span>
+              <span class="status status-delivered">Delivered</span>
+            </div>
+          </div>
+          <div class="order-card-body">
+            <div class="order-product">
+              <h4>Hardwood Planks (2&quot;x4&quot;)</h4>
+              <p>Qty: 80 pieces · Delivered to Site B, Accra</p>
+            </div>
+            <div class="order-total">
+              <strong>$560</strong>
+              <div class="order-actions">
+                <a href="404.html" class="btn-outline-sm">Buy Again</a>
+                <a href="404.html" class="btn-outline-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-card">
+          <div class="order-card-top">
+            <span class="order-id">#ORD-0998 · Paint Buckets</span>
+            <div class="order-meta">
+              <span>Jul 28, 2026</span>
+              <span class="status status-pending">Pending</span>
+            </div>
+          </div>
+          <div class="order-card-body">
+            <div class="order-product">
+              <h4>Emulsion Paint (20L Bucket)</h4>
+              <p>Qty: 6 buckets · Waiting for payment confirmation</p>
+            </div>
+            <div class="order-total">
+              <strong>$240</strong>
+              <div class="order-actions">
+                <a href="customer-payment-methods.html" class="btn btn-primary btn-sm">Pay Now</a>
+                <a href="404.html" class="btn-outline-sm">Cancel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

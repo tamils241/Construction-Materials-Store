@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">View Site</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="dash-sidebar">
+      <div class="dash-user">
+        <div class="dash-avatar">🧑</div>
+        <h4>John Carter</h4>
+        <span>Member since 2023</span>
+      </div>
+      <nav class="dash-nav">
+        <a href="customer-dashboard.html" class="active"><span class="nav-icon">📊</span> My Dashboard</a>
+        <a href="customer-orders.html"><span class="nav-icon">📦</span> My Orders</a>
+        <a href="customer-wishlist.html"><span class="nav-icon">❤️</span> Wishlist</a>
+        <a href="customer-track-delivery.html"><span class="nav-icon">🗺️</span> Track Delivery</a>
+        <a href="customer-payment-methods.html"><span class="nav-icon">💳</span> Payment Methods</a>
+        <a href="customer-addresses.html"><span class="nav-icon">📍</span> Addresses</a>
+        <a href="customer-settings.html"><span class="nav-icon">⚙️</span> Account Settings</a>
+      </nav>
+      <a href="index.html" class="dash-view">🌐 View Site</a>
+      <a href="login.html" class="dash-logout">🚪 Logout</a>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-head">
+        <div>
+          <h1>Hello, John 👋</h1>
+          <p>Track your orders, manage addresses and more.</p>
+        </div>
+        <div class="dash-search">
+          <span>🔍</span>
+          <input type="text" placeholder="Search your orders...">
+        </div>
+      </div>
+
+      <div class="customer-welcome">
+        <div>
+          <h2>Welcome Back!</h2>
+          <p>You have 3 active orders and 2 items in your cart.</p>
+        </div>
+        <a href="products.html" class="btn btn-primary">Start Shopping</a>
+      </div>
+
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="stat-icon icon-blue">📦</div>
+          <div class="stat-body">
+            <h3>Total Orders</h3>
+            <div class="stat-big">12</div>
+            <span class="stat-change up">▲ 3 this month</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-orange">🚚</div>
+          <div class="stat-body">
+            <h3>In Transit</h3>
+            <div class="stat-big">2</div>
+            <span class="stat-change down">▼ 1 delivered</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-green">🥰</div>
+          <div class="stat-body">
+            <h3>Wishlist Items</h3>
+            <div class="stat-big">8</div>
+            <span class="stat-change up">▲ 2 added</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-red">💳</div>
+          <div class="stat-body">
+            <h3>Wallet Balance</h3>
+            <div class="stat-big">$240</div>
+            <span class="stat-change">Available</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-panels">
+        <div class="dash-panel">
+          <h2>Recent Orders <a href="customer-orders.html">View All →</a></h2>
+          <div class="recent-orders-table">
+            <table class="dash-tbl">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Product</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>#ORD-1024</td><td>Steel Bundle</td><td>Sep 02, 2026</td><td>$2,450</td><td><span class="status status-shipped">Shipped</span></td></tr>
+                <tr><td>#ORD-1011</td><td>Cement (50 bags)</td><td>Aug 20, 2026</td><td>$890</td><td><span class="status status-delivered">Delivered</span></td></tr>
+                <tr><td>#ORD-1007</td><td>Wood Planks</td><td>Aug 12, 2026</td><td>$560</td><td><span class="status status-delivered">Delivered</span></td></tr>
+                <tr><td>#ORD-0998</td><td>Paint Buckets</td><td>Jul 28, 2026</td><td>$240</td><td><span class="status status-pending">Pending</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dash-panel">
+          <h2>Order Status</h2>
+          <ul class="mini-list">
+            <li><span class="status-dot dot-blue"></span><div class="info"><strong>#ORD-1024 · Steel Bundle</strong><small>Shipped · Arriving Sep 05</small></div><span class="price">$2,450</span></li>
+            <li><span class="status-dot dot-orange"></span><div class="info"><strong>#ORD-0998 · Paint Buckets</strong><small>Pending Payment</small></div><span class="price">$240</span></li>
+            <li><span class="status-dot dot-green"></span><div class="info"><strong>#ORD-1011 · Cement</strong><small>Delivered · Rated 5★</small></div><span class="price">$890</span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

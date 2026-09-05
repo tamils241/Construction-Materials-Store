@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="categories.html">Categories</a>
+        <a href="products.html">Products</a>
+        <a href="features.html">Why Us</a>
+        <a href="deals.html">Deals</a>
+        <a href="testimonials.html">Reviews</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-ghost">Login</a>
+        <a href="register.html" class="btn btn-primary">Register</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section class="hero" style="min-height:50vh;">
+    <div class="hero-content about-hero-content">
+      <div class="hero-text">
+        <h1>Contact <span class="highlight">Us</span></h1>
+        <p>We're here to help with your construction material needs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">We'd Love to Hear From You</h2>
+        <p class="section-subtitle">Send us a message and our team will get back to you within 24 hours</p>
+      </div>
+
+      <div class="features-grid contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal">
+          <form class="auth-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="you@example.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="How can we help?" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="auth-btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Why Contact Stackly -->
+        <div class="contact-benefits reveal">
+          <div class="contact-benefits-header">
+            <span class="section-tag">Why Stackly?</span>
+            <h3>We're Here to Make Your Project Easier</h3>
+            <p>From product selection to delivery, our team is ready to help you find the right construction materials for your project.</p>
+          </div>
+
+          <div class="contact-benefit-list">
+            <div class="contact-benefit-item">
+              <div class="contact-benefit-icon">✓</div>
+              <div>
+                <h4>Expert Guidance</h4>
+                <p>Get professional help choosing the right materials for your project.</p>
+              </div>
+            </div>
+            <div class="contact-benefit-item">
+              <div class="contact-benefit-icon">⚡</div>
+              <div>
+                <h4>Quick Response</h4>
+                <p>Our team responds to your questions and requests within 24 hours.</p>
+              </div>
+            </div>
+            <div class="contact-benefit-item">
+              <div class="contact-benefit-icon">🚚</div>
+              <div>
+                <h4>Reliable Delivery</h4>
+                <p>We help ensure your materials reach your project safely and on time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="width:60px;height:60px;font-size:1.5rem;">📍</div>
+          <h3>Visit Us</h3>
+          <p>123 Builder Street, Industrial Area, New York City, NY 10001</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="width:60px;height:60px;font-size:1.5rem;">📞</div>
+          <h3>Call Us</h3>
+          <p>Sales: +1 (234) 567-890<br>Support: +1 (234) 567-891<br>Toll-Free: 1-800-STACKLY</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="width:60px;height:60px;font-size:1.5rem;">✉️</div>
+          <h3>Email Us</h3>
+          <p>General: info@stackly.com<br>Support: support@stackly.com<br>Bulk Orders: bulk@stackly.com</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="width:60px;height:60px;font-size:1.5rem;">🕒</div>
+          <h3>Business Hours</h3>
+          <p>Mon - Sat: 8:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 6:00 PM<br>24/7 online support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section contact-map-section">
+    <div class="container">
+      <div class="contact-map reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2899193256!2d-74.259866!3d40.697149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Stackly Location - New York City">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+<a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+          <p>Your trusted partner for premium construction materials. Quality products, competitive prices, and reliable delivery since 2015.</p>
+          <div class="footer-social">
+            <a href="404.html">f</a>
+            <a href="404.html">in</a>
+            <a href="404.html">X</a>
+            <a href="404.html">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="products.html?category=bricks-blocks">Bricks & Blocks</a></li>
+            <li><a href="products.html?category=steel-iron">Steel & Iron</a></li>
+            <li><a href="products.html?category=wood-timber">Wood & Timber</a></li>
+            <li><a href="products.html?category=paints-finishes">Paints & Finishes</a></li>
+            <li><a href="products.html?category=plumbing">Plumbing</a></li>
+            <li><a href="products.html?category=electrical">Electrical</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="404.html">123 Builder Street, NYC</a></li>
+            <li><a href="404.html">+1 (234) 567-890</a></li>
+            <li><a href="mailto:info@stackly.com">info@stackly.com</a></li>
+            <li><a href="404.html">Live Chat Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Stackly. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

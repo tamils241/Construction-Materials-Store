@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addresses - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">View Site</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="dash-sidebar">
+      <div class="dash-user">
+        <div class="dash-avatar">🧑</div>
+        <h4>John Carter</h4>
+        <span>Member since 2023</span>
+      </div>
+      <nav class="dash-nav">
+        <a href="customer-dashboard.html"><span class="nav-icon">📊</span> My Dashboard</a>
+        <a href="customer-orders.html"><span class="nav-icon">📦</span> My Orders</a>
+        <a href="customer-wishlist.html"><span class="nav-icon">❤️</span> Wishlist</a>
+        <a href="customer-track-delivery.html"><span class="nav-icon">🗺️</span> Track Delivery</a>
+        <a href="customer-payment-methods.html"><span class="nav-icon">💳</span> Payment Methods</a>
+        <a href="customer-addresses.html" class="active"><span class="nav-icon">📍</span> Addresses</a>
+        <a href="customer-settings.html"><span class="nav-icon">⚙️</span> Account Settings</a>
+      </nav>
+      <a href="index.html" class="dash-view">🌐 View Site</a>
+      <a href="login.html" class="dash-logout">🚪 Logout</a>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-head">
+        <div>
+          <h1>Addresses</h1>
+          <p>Manage the delivery and billing addresses on your account.</p>
+        </div>
+        <a href="404.html" class="btn btn-primary">+ Add New Address</a>
+      </div>
+
+      <div class="address-grid">
+
+        <div class="address-card">
+          <span class="addr-label">Home · Default</span>
+          <h4>John Carter</h4>
+          <p>12 Independence Avenue,<br>East Legon, Accra<br>+233 20 123 4567</p>
+          <div class="addr-actions">
+            <a href="404.html" class="btn-outline-sm">Edit</a>
+            <a href="404.html" class="btn-outline-sm">Remove</a>
+          </div>
+        </div>
+
+        <div class="address-card">
+          <span class="addr-label">Office</span>
+          <h4>ConstructCo Ltd.</h4>
+          <p>45 Liberation Road,<br>Airport Residential, Accra<br>+233 24 765 4321</p>
+          <div class="addr-actions">
+            <a href="404.html" class="btn-outline-sm">Edit</a>
+            <a href="404.html" class="btn-outline-sm">Remove</a>
+          </div>
+        </div>
+
+        <div class="address-card">
+          <span class="addr-label">Site</span>
+          <h4>Warehouse Site</h4>
+          <p>88 Kumasi Tech Hub,<br>Adum, Kumasi<br>+233 27 555 8899</p>
+          <div class="addr-actions">
+            <a href="404.html" class="btn-outline-sm">Edit</a>
+            <a href="404.html" class="btn-outline-sm">Remove</a>
+          </div>
+        </div>
+
+        <button class="add-card-btn">
+          <span class="plus">+</span>
+          Add New Address
+        </button>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customers - Admin - Stackly</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">View Site</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="dash-sidebar">
+      <div class="dash-user">
+        <div class="dash-avatar">👨‍💼</div>
+        <h4>Administrator</h4>
+        <span>admin@stackly.com</span>
+      </div>
+      <nav class="dash-nav">
+        <a href="admin-dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+        <a href="admin-orders.html"><span class="nav-icon">📦</span> Orders</a>
+        <a href="admin-products.html"><span class="nav-icon">🏷️</span> Products</a>
+        <a href="admin-categories.html"><span class="nav-icon">🗂️</span> Categories</a>
+        <a href="admin-customers.html" class="active"><span class="nav-icon">👥</span> Customers</a>
+        <a href="admin-messages.html"><span class="nav-icon">💬</span> Messages</a>
+        <a href="admin-reports.html"><span class="nav-icon">📈</span> Reports</a>
+        <a href="admin-settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      </nav>
+      <a href="index.html" class="dash-view">🌐 View Site</a>
+      <a href="login.html" class="dash-logout">🚪 Logout</a>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-head">
+        <div>
+          <h1>Customers</h1>
+          <p>View and manage all registered customers.</p>
+        </div>
+        <div class="dash-search">
+          <span>🔍</span>
+          <input type="text" placeholder="Search customers...">
+        </div>
+      </div>
+
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="stat-icon icon-green">👥</div>
+          <div class="stat-body">
+            <h3>Total Customers</h3>
+            <div class="stat-big">3,890</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-orange">✨</div>
+          <div class="stat-body">
+            <h3>New This Month</h3>
+            <div class="stat-big">214</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-blue">🪙</div>
+          <div class="stat-body">
+            <h3>Active Buyers</h3>
+            <div class="stat-big">1,560</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon icon-red">💤</div>
+          <div class="stat-body">
+            <h3>Inactive</h3>
+            <div class="stat-big">326</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-panel">
+        <div class="recent-orders-table">
+          <table class="dash-tbl">
+            <thead>
+              <tr>
+                <th>Customer</th>
+                <th>Email</th>
+                <th>Orders</th>
+                <th>Total Spent</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>John Carter</strong></td><td>john.carter@example.com</td><td>12</td><td>$8,450</td><td><span class="status status-delivered">Active</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td><strong>Sarah Lee</strong></td><td>sarah.lee@example.com</td><td>7</td><td>$4,120</td><td><span class="status status-delivered">Active</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td><strong>Mike Brown</strong></td><td>mike.brown@example.com</td><td>15</td><td>$11,780</td><td><span class="status status-delivered">Active</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td><strong>Emily Davis</strong></td><td>emily.davis@example.com</td><td>3</td><td>$980</td><td><span class="status status-pending">Pending</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td><strong>David Wilson</strong></td><td>david.wilson@example.com</td><td>0</td><td>$0</td><td><span class="status status-cancelled">Inactive</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+              <tr><td><strong>Anna Taylor</strong></td><td>anna.taylor@example.com</td><td>9</td><td>$6,230</td><td><span class="status status-delivered">Active</span></td><td><a href="404.html" class="btn-outline-sm">View</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
