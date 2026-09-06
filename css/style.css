@@ -278,6 +278,11 @@ img {
   transform: rotate(-45deg) translate(5px, -6px);
 }
 
+/* Mobile auth links (inside nav-links, visible only on mobile menu) */
+.mobile-auth-links {
+  display: none;
+}
+
 /* ========== HERO SECTION ========== */
 .hero {
   min-height: 100vh;
@@ -287,6 +292,21 @@ img {
   position: relative;
   overflow: hidden;
   padding-top: 70px;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(20, 20, 40, 0.82) 0%, rgba(26, 26, 46, 0.65) 50%, rgba(15, 52, 96, 0.72) 100%);
 }
 .hero::before {
   content: '';
@@ -659,6 +679,8 @@ img {
   position: relative;
   cursor: pointer;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
 }
 .product-card:hover {
   transform: translateY(-12px);
@@ -742,6 +764,10 @@ img {
 
 .product-info {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 .product-category {
   font-size: 0.78rem;
@@ -782,6 +808,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: auto;
+  gap: 8px;
 }
 .product-price .current {
   font-size: 1.35rem;
@@ -804,6 +832,14 @@ img {
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
+  flex-shrink: 0;
+  min-width: 110px;
+  height: 36px;
+  line-height: 1;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .product-price .add-cart:hover {
   transform: translateY(-2px);
@@ -1142,7 +1178,7 @@ img {
   font-size: 0.9rem;
   line-height: 1.8;
   margin-bottom: 24px;
-  text-align: center;
+  text-align: left;
 }
 .footer-social {
   display: flex;
@@ -3155,6 +3191,27 @@ img {
     font-size: 1.15rem;
     padding: 12px 25px;
   }
+
+  .mobile-auth-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    width: 100%;
+  }
+
+  .mobile-auth-links .btn {
+    display: flex;
+    width: 220px;
+    max-width: 80%;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.05rem;
+    padding: 13px 20px;
+  }
 }
 
 
@@ -3929,6 +3986,19 @@ img {
   .footer-col {
     width: 100%;
     min-width: 0;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+  .footer-brand p {
+    text-align: center;
+  }
+  .footer-brand .logo {
+    justify-content: center;
+  }
+  .footer-social {
+    justify-content: center;
   }
 
   .footer-bottom {
