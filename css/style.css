@@ -4183,3 +4183,74 @@ img {
     object-fit: contain !important;
   }
 }
+
+/* =========================================================
+   VERY SMALL SCREENS (<=400px) - PREVENT IMAGE OVERLAP
+   Applies to ALL pages
+   ========================================================= */
+@media (max-width: 400px) {
+
+  /* Category icons -> keep small and centered, no fixed big boxes */
+  .category-icon {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+  .category-icon img {
+    object-fit: contain !important;
+  }
+
+  /* Collapse category grid so cards never squeeze/overlap */
+  .categories-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+
+  /* Reduce fixed product/wish image heights to avoid overlap */
+  .product-img {
+    height: 170px;
+  }
+  .wishlist-item .wish-img {
+    height: 170px;
+  }
+
+  /* Hero: tighten spacing so stats/cards never overlap */
+  .hero-stats {
+    gap: 14px;
+  }
+  .stat-item {
+    padding: 20px 30px;
+    min-width: 0;
+    width: 100%;
+  }
+
+  /* Deal product compact */
+  .deals-product {
+    max-width: 200px;
+    height: 240px;
+  }
+  .deals-product img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* About image full width, no fixed height */
+  .about-grid > div:first-child img {
+    height: auto !important;
+    min-height: 0;
+    max-height: 260px;
+  }
+
+  /* Ensure feature icons never overflow */
+  .feature-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  /* Back-to-top safe position */
+  .back-to-top {
+    bottom: 16px;
+    right: 16px;
+  }
+}
