@@ -137,6 +137,21 @@ document.querySelectorAll('.add-cart').forEach(btn => {
   });
 });
 
+// ========== HERO CARD ADD BUTTON ==========
+document.querySelectorAll('.add-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const originalText = btn.textContent;
+    btn.textContent = '✓';
+    btn.style.background = '#27ae60';
+
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.style.background = '';
+    }, 1500);
+  });
+});
+
 // ========== COUNTDOWN TIMER ==========
 function initCountdown() {
   const countdownEl = document.querySelector('.countdown');
